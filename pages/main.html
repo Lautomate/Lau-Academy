@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Lau Academy</title>
+</head>
+<body onmouseover="authenticate()">
+
+    <div class="navbar">
+        <ul>
+            <li><a id="open_mentors">Mentors</a></li>
+            <li><a id="open_cert">Certificates</a></li>
+            <li><a id="open_reg_form">Register</a></li>
+            <li><a id="open_aboutme">Lau</a></li>
+        </ul>
+    </div>
+
+
+    <div class="container_content"></div>
+
+    <div class="container_login">
+        <div class="wrap">
+            <div>
+                <p>Username</p>
+                <input type="text" id="username" autocomplete="off">
+            </div>
+            <div>
+                <p>Password</p>
+                <input type="password" id="password">
+            </div>
+        </div>
+    </div>
+
+    <div class="container_registration">
+        <div class="wrap">
+            <div id="closebutton">&#215;</div>
+            <p>Registration</p>
+            <div>
+                <p>Username</p>
+                <input type="text" id="username" autocomplete="off">
+            </div>
+            <div>
+                <p>Password</p>
+                <input type="password" id="password">
+            </div>
+        </div>
+    </div>
+
+    <script src='../script/jquery.min'></script>
+    <script src="../script/authenticate.js"></script>
+    <script src="../script/routing.js"></script>
+</body>
+</html>

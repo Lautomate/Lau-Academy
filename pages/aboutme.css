@@ -1,0 +1,117 @@
+@font-face {
+    font-family: Yusi;
+    src: url(../src/Yusi.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Yusi', 'Georgia', 'Times New Roman', Times, serif;
+    color: white;
+}
+
+body {
+    background-image: url('../src/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container_profile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.container_profile div {
+    margin: 21px;
+}
+
+.profile_pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url('../src/profile.png');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    background-color: rgba(32, 23, 23, 0.856);
+    margin: 10px;
+}
+
+
+.profile_links img{
+    height: 32px;
+    width: 32px;
+    margin: 0 12px;
+}
+
+.profile_description {
+    display: flex;
+    justify-content: center;
+}
+
+.profile_description p {
+    text-align: center;
+    width: 300px;
+    height: 150px;
+}
+
+
+.profile_navigation {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navigation_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 80px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.navigation_wrap:hover {
+    background-color: rgba(0, 0, 255, 0.733);
+    border-radius: 5%;
+    transition: 0.5s;
+}
+
+.navigation_wrap img {
+    width: 32px;
+    height: 32px;
+    align-self: center;
+    image-rendering: optimizeQuality;
+}
+
+.navigation_wrap p {
+    align-self: center;
+}
+
+#pnavigation2 {
+    display: none;
+}
+
+#pnavigation3 {
+    display: none;
+}
+
+#pnavigation4 {
+    display: none;
+}
+
+.back_button_container img {
+    width: auto;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 650px){
+    .navigation_wrap {
+        width: 50px;
+    }
+}

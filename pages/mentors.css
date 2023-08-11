@@ -1,0 +1,161 @@
+
+@font-face {
+    font-family: Yusi;
+    src: url(../src/Yusi.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Yusi', 'Georgia', 'Times New Roman', Times, serif;
+    color: white;
+}
+
+body {
+    background-image: url('../src/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar {
+    background-color: rgba(18, 18, 19, 0.274);
+    height: auto;
+    width: 100%;
+    
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: right;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+    text-align: right;
+    
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+.navbar ul li a:hover {
+    background-color: rgb(146, 138, 138);
+    transition: 0.9s ease;
+}
+
+
+.container_mentor {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 28px;
+    justify-content: center;
+}
+
+.mentor_box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 27%;
+    height: 500px;
+    box-shadow: rgba(18, 18, 19, 0.87) 0px 6px 12px -2px, rgba(51, 44, 44, 0.603) 0px 3px 7px -3px;
+    background-color: rgba(22, 17, 17, 0.041);
+}
+
+.mentor_profile {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid white;
+
+}
+
+.profile1 {
+    background-image: url('../src/angge.jpg');
+}
+
+.profile2 {
+    background-image: url('../src/girl1.jpg');
+}
+
+.profile3 {
+    background-image: url('../src/girl2.jpg');
+}
+
+.profile4 {
+    background-image: url('../src/boy1.jpg');
+}
+
+h3, h5{
+    margin: 12px 0;
+}
+
+p { 
+    border-radius: 22px;
+    outline: 1px solid rgba(206, 139, 139, 0.842);
+    padding: 8px;
+    margin: 4px 0;
+    text-align: center;
+}
+
+
+.sources {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.sources img {
+    width: 20px;
+    height: 20px;
+}
+
+.send_message_container { 
+    width: 100%;
+    height: 50px;
+    background-color: rgba(31, 26, 26, 0.63);
+    margin-top: auto;
+}
+
+.send_message_container button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: rgba(199, 197, 198, 0.945);
+}
+
+.send_message_container button:hover {
+    background-color: rgba(41, 38, 38, 0.788);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+@media only screen and (max-width: 650px) {
+    .mentor_box {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    h3 {
+        text-align: center;
+    }
+}
